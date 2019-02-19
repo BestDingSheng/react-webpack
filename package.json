@@ -1,0 +1,52 @@
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "description": "webpack 搭建 react开发环境",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --open --mode development",
+    "lint": "eslint --ext .js src",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BestDingSheng/react-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BestDingSheng/react-webpack/issues"
+  },
+  "homepage": "https://github.com/BestDingSheng/react-webpack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "html-webpack-plugin": "^4.0.0-beta.3",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.4",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "eslint-plugin-flowtype": "^3.4.2",
+    "eslint-plugin-import": "^2.16.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  }
+}
