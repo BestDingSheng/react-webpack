@@ -7,11 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "webpack-dev-server --open --mode development",
-    "lint": "eslint --ext .js src",
-    "precommit": "lint-staged"
+    "lint": "eslint --fix --ext .js src",
+    "precommit": "lint-staged",
+    "commitmsg": "commitlint -E GIT_PARAMS"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": "eslint"
+    "src/**/*.{js,jsx}": "eslint --fix"
   },
   "repository": {
     "type": "git",
